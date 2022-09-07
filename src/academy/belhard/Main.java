@@ -6,13 +6,13 @@ import entity.User;
 public class Main {
     public static void main(String[] args) {
 
-        Person n1= new Person();
-        n1.personalData("Tom", "Hardy");
+        Person n1= new Person("Tom", "Hardy");
+        //n1.Person("Tom", "Hardy");
         System.out.println(n1.getFullName());
 
 
-        User u1 = new User();
-        u1.fullInfo("Tom", "Hardy","tom.hardy@mail.ru", "13151719");
+        User u1 = new User("Tom", "Hardy","tom.hardy@mail.ru", "13151719");
+        //u1.getFullName("Tom", "Hardy","tom.hardy@mail.ru", "13151719");
         System.out.println(u1.getFullInfo());
         System.out.println(u1.isPasswordCorrect("2826242220"));
     }

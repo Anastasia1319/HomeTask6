@@ -4,8 +4,8 @@ public class User extends Person {
     private String email;
     private String password;
 
-    public void fullInfo (String firstName, String lastName, String email, String password) {
-        super.personalData(firstName,lastName);
+    public User (String firstName, String lastName, String email, String password) {
+        super(firstName,lastName);
         this.email = email;
         this.password = password;
     }
